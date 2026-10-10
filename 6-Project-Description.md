@@ -77,6 +77,7 @@ Two of the three motors share Output A in parallel, and the third uses Output B.
 - Circuit diagram <img width="1789" height="2285" alt="circuit diagram" src="https://github.com/user-attachments/assets/83e92e8e-a661-4c3a-a5b3-135b84cf5035"/>
 
 - Top view with wiring connection
+<img width="576" height="1280" alt="Embedded Connection" src="https://github.com/user-attachments/assets/27dc7138-d734-480c-ab43-45227bc28606" />
 
 
 ## License
