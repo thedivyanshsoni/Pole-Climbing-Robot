@@ -1,6 +1,6 @@
 # Pole-Climbing Robot
 
-A Bluetooth-controlled robot that climbs and descends vertical poles and pipes. It runs on an Arduino Uno, an L298N motor driver and three geared DC motors, and is operated from a smartphone so nobody has to climb the pole by hand.
+A Bluetooth-controlled robot that climbs and descends vertical poles and pipes. It runs on an Arduino Uno, an L298N motor driver and three geared DC motors, and is operated from a smartphone app name Bluetooth RC Controller so nobody has to push the robot to climb the pole by hand.
 
 ## Why This Project?
 
@@ -14,9 +14,9 @@ The motors are 150 RPM geared DC motors. The low speed and high torque give enou
 
 ## How It Works
 
-1. **Power:** Two 3.7V Li-Ion cells in series supply 7.4V. The supply passes through a 3-pin toggle switch that turns the whole robot on and off.
+1. **Power:** 2 3.7V Li-Ion cells in series supply 7.4V. The supply passes through a 3-pin toggle switch that turns the whole robot on and off.
 2. **Control:** The Arduino Uno R3 listens for commands from an HC-05 Bluetooth module, which pairs with a phone app.
-3. **Driving:** On receiving a command, the Arduino sets the input pins of the L298N driver, and the driver powers the three motors.
+3. **Driving:** On receiving a command, the Arduino sets the input pins of the L293D driver, and the driver powers the three motors.
 
 | Command | Character | Action |
 |---------|-----------|--------|
@@ -29,7 +29,7 @@ The motors are 150 RPM geared DC motors. The low speed and high torque give enou
 | Component | Qty | Purpose |
 |-----------|-----|---------|
 | Arduino Uno R3 | 1 | Main controller |
-| L298N Motor Driver | 1 | Drives the motors |
+| L293D Motor Driver | 1 | Drives the motors |
 | HC-05 Bluetooth Module | 1 | Wireless link to the phone |
 | 150 RPM DC Gear Motors | 3 | Grip and climb |
 | 3.7V Li-Ion Cells | 2 | 7.4V power source (series) |
@@ -52,6 +52,8 @@ The motors are 150 RPM geared DC motors. The low speed and high torque give enou
 |-----------|-------------|
 | TX | 2 |
 | RX | 3 |
+| Vin | 3.3v |
+| GND | GND |
 
 Two of the three motors share Output A in parallel, and the third uses Output B.
 
@@ -71,8 +73,11 @@ Two of the three motors share Output A in parallel, and the third uses Output B.
 ## Images
 
 - Initial side view
+- <img width="3000" height="4000" alt="Structure" src="https://github.com/user-attachments/assets/4e95b8d6-2b93-4125-a6f0-839e103a67a7" />
 - Top view after wiring
+- <img width="576" height="1280" alt="Embedded Connection" src="https://github.com/user-attachments/assets/069ebb53-6881-4278-a567-be36bf6e1ff8" />
 - Circuit diagram
+<img width="1789" height="2285" alt="circuit diagram" src="https://github.com/user-attachments/assets/83e92e8e-a661-4c3a-a5b3-135b84cf5035" />
 
 ## License
 
