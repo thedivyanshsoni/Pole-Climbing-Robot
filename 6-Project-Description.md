@@ -65,19 +65,16 @@ Two of the three motors share Output A in parallel, and the third uses Output B.
 
 ## Limitations and Future Improvements
 
-- Motors currently run at full speed, with no speed control. PWM on the L298N enable pins (ENA/ENB) could add this.
+- Motors currently run at full speed, with no speed control. PWM on the L293D enable pins (ENA/ENB) could add this.
 - There is no failsafe yet. A timeout that stops the motors when Bluetooth disconnects would improve safety.
 - Limit switches or sensors could be added to stop the robot at the top or bottom of the pole.
 - A camera module could be mounted for live inspection footage.
 
 ## Images
 
-- Initial side view
-- <img width="3000" height="4000" alt="Structure" src="https://github.com/user-attachments/assets/4e95b8d6-2b93-4125-a6f0-839e103a67a7" />
-- Top view after wiring
-- <img width="576" height="1280" alt="Embedded Connection" src="https://github.com/user-attachments/assets/069ebb53-6881-4278-a567-be36bf6e1ff8" />
-- Circuit diagram
-<img width="1789" height="2285" alt="circuit diagram" src="https://github.com/user-attachments/assets/83e92e8e-a661-4c3a-a5b3-135b84cf5035" />
+- Initial side view <img width="3000" height="4000" alt="Structure" src="https://github.com/user-attachments/assets/4e95b8d6-2b93-4125-a6f0-839e103a67a7" />
+- Top view after wiring <img width="576" height="1280" alt="Embedded Connection" src="https://github.com/user-attachments/assets/069ebb53-6881-4278-a567-be36bf6e1ff8" />
+- Circuit diagram <img width="1789" height="2285" alt="circuit diagram" src="https://github.com/user-attachments/assets/83e92e8e-a661-4c3a-a5b3-135b84cf5035" />
 
 ## License
 
